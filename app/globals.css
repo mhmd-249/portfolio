@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-cream: #F5F1ED;
+    --color-white: #FFFFFF;
+    --color-text-primary: #000000;
+    --color-text-secondary: #6B7280;
+    --color-text-tertiary: #9CA3AF;
+    --color-mint: #10B981;
+    --color-border: #E5E7EB;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-text-primary bg-white;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Typography defaults */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-page-title;
+  }
+
+  h2 {
+    @apply text-card-title;
+  }
+
+  p {
+    @apply text-body leading-relaxed;
+  }
+
+  /* Link styles */
+  a {
+    @apply transition-all duration-200 ease-smooth;
+  }
+
+  /* Focus states for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-mint;
+  }
+}
+
+@layer components {
+  /* Content container - max 700px centered */
+  .content-container {
+    @apply max-w-content mx-auto px-6 md:px-12;
+  }
+
+  /* Section spacing */
+  .section-spacing {
+    @apply py-section-sm md:py-section-lg;
+  }
+
+  /* Link with mint color and arrow */
+  .link-arrow {
+    @apply text-mint hover:underline transition-all duration-200;
+  }
+
+  /* Meta text style (dates, etc.) */
+  .meta-text {
+    @apply text-meta text-text-tertiary;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
