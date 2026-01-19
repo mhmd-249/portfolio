@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import AgentPathways from '@/components/AgentPathways';
 
 // Landing page
 // Specs: Single page, non-scrollable, 100vh, cream background (#F5F1ED)
@@ -26,7 +27,7 @@ export default function Home() {
             </p>
 
             {/* Call to action with inline links */}
-            <p className="text-lg md:text-section-desc text-text-secondary leading-relaxed mb-12">
+            <p className="text-lg md:text-section-desc text-text-secondary leading-relaxed mb-10 md:mb-12">
               You can start reading my{' '}
               <Link
                 href="/blog"
@@ -44,17 +45,8 @@ export default function Home() {
               .
             </p>
 
-            {/* Visualization Placeholder */}
-            <div className="flex justify-center">
-              <div
-                className="w-full max-w-[500px] h-[200px] md:h-[280px] bg-viz-nodes/5 rounded-lg border border-border flex items-center justify-center"
-                aria-label="Agent pathways visualization placeholder"
-              >
-                <span className="text-text-tertiary text-sm">
-                  Agent Pathways Visualization
-                </span>
-              </div>
-            </div>
+            {/* Agent Pathways Visualization */}
+            <AgentPathways />
           </section>
         </div>
       </div>

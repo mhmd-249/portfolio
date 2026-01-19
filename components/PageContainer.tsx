@@ -12,7 +12,7 @@ interface PageContainerProps {
 export default function PageContainer({
   children,
   className = '',
-  animate = true,
+  animate = false, // Disabled by default since we have template-level animations
 }: PageContainerProps) {
   const content = (
     <div className={`max-w-content mx-auto px-6 md:px-12 ${className}`}>
