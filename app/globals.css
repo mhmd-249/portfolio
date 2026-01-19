@@ -72,6 +72,41 @@
   .meta-text {
     @apply text-meta text-text-tertiary;
   }
+
+  /* Code block header */
+  .code-block-header {
+    @apply bg-[#2d2d2d] px-4 py-2 rounded-t-lg border-b border-gray-700;
+  }
+
+  /* Code block styling */
+  .code-block {
+    @apply bg-[#1a1a1a] text-gray-100 p-4 rounded-b-lg overflow-x-auto;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    tab-size: 2;
+  }
+
+  .code-block code {
+    @apply bg-transparent p-0;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  /* Inline code styling */
+  .inline-code {
+    @apply bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-[0.9em];
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  }
+
+  /* Article content styles */
+  .article-content {
+    @apply text-text-primary;
+  }
+
+  .article-content p:last-child {
+    @apply mb-0;
+  }
 }
 
 @layer utilities {
