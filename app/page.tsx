@@ -3,12 +3,11 @@ import Footer from '@/components/Footer';
 import AgentPathways from '@/components/AgentPathways';
 
 // Landing page
-// Specs: Single page, non-scrollable, 100vh, cream background (#F5F1ED)
-// Hero centered vertically with bio and visualization
+// Specs: Single page, non-scrollable, 100vh, white background
 
 export default function Home() {
   return (
-    <main className="h-[calc(100vh-4rem)] bg-cream flex flex-col overflow-hidden">
+    <main className="h-[calc(100vh-4rem)] bg-white flex flex-col overflow-hidden">
       {/* Main content - centered vertically */}
       <div className="flex-1 flex items-center justify-center">
         <div className="max-w-content mx-auto px-6 md:px-12">
@@ -20,14 +19,14 @@ export default function Home() {
             </h1>
 
             {/* Bio */}
-            <p className="text-lg md:text-section-desc text-text-secondary leading-relaxed mb-4">
+            <p className="text-base text-text-secondary leading-relaxed mb-4">
               a machine learning engineer and researcher. I help companies
               build production-grade AI solutions. My thoughts focus on machine
               learning and AI engineering.
             </p>
 
             {/* Call to action with inline links */}
-            <p className="text-lg md:text-section-desc text-text-secondary leading-relaxed mb-10 md:mb-12">
+            <p className="text-base text-text-secondary leading-relaxed mb-10 md:mb-12">
               You can start reading my{' '}
               <Link
                 href="/blog"
@@ -45,8 +44,13 @@ export default function Home() {
               .
             </p>
 
-            {/* Agent Pathways Visualization */}
-            <AgentPathways />
+            {/* Agent Pathways Visualization with Caption */}
+            <figure>
+              <AgentPathways />
+              <figcaption className="text-meta text-text-secondary text-center mt-4">
+                Fig. 1: Multi-Agents Orchestration
+              </figcaption>
+            </figure>
           </section>
         </div>
       </div>

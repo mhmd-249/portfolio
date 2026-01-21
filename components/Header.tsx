@@ -10,13 +10,9 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isLandingPage = pathname === '/';
-
   return (
     <header
-      className={`sticky top-0 z-50 h-header border-b border-border ${
-        isLandingPage ? 'bg-cream' : 'bg-white'
-      }`}
+      className="sticky top-0 z-50 h-header border-b border-border bg-white"
     >
       <nav className="h-full max-w-content mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo / Name */}
@@ -86,9 +82,7 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-            className={`md:hidden border-b border-border overflow-hidden ${
-              isLandingPage ? 'bg-cream' : 'bg-white'
-            }`}
+            className="md:hidden border-b border-border overflow-hidden bg-white"
           >
             <ul className="px-6 py-4 space-y-4">
               {navigation.map((item) => (

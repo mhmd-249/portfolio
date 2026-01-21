@@ -162,7 +162,7 @@ export const navigation = [
 // =============================================================================
 
 export const socialLinks = {
-  linkedin: 'https://linkedin.com/in/mohammedmohammed', // Update with actual URL
-  github: 'https://github.com/mohammedmohammed',        // Update with actual URL
-  twitter: 'https://x.com/mohammedmohammed',            // Update with actual URL
+  linkedin: 'https://www.linkedin.com/in/mohammed249/',
+  github: 'https://github.com/mhmd-249',
+  twitter: 'https://x.com/matshi249',
 } as const;
