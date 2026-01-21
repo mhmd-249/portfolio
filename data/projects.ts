@@ -19,14 +19,14 @@ export const projects: Project[] = [
     id: '2',
     title: 'Socratic Personal Tutor',
     description: 'End-to-end deployment framework for large language models featuring automatic scaling, A/B testing, model versioning, and comprehensive monitoring. Handles millions of inference requests daily.',
-    techStack: ['Kubernetes', 'Ray Serve', 'MLflow', 'Prometheus', 'Grafana'],
+    techStack: ['Docker', 'RAG', 'PostgreSQL & Pgvector', 'Prometheus', 'Grafana'],
     slug: 'socratic-personal-tutor',
   },
   {
     id: '3',
     title: 'AmAIcus: AI Legal Assistant',
     description: 'High-performance similarity search system optimized for billion-scale vector datasets. Implements approximate nearest neighbor algorithms with sub-millisecond latency.',
-    techStack: ['Rust', 'HNSW', 'ScaNN', 'Redis', 'gRPC'],
+    techStack: ['Rust', 'RAG', 'ScaNN', 'Redis', 'gRPC'],
     slug: 'ai-legal-assistant',
   },
   {
