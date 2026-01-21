@@ -72,13 +72,13 @@ export default function Footer({ variant = 'default' }: FooterProps) {
               </a>
             </div>
             <p className="text-meta text-text-tertiary">
-              Copyright 2025, Mohammed Mohammed
+              Copyright 2026, Mohammed Mohammed
             </p>
           </div>
         ) : (
           // Other pages: centered copyright
           <p className="text-meta text-text-tertiary text-center">
-            Copyright 2025, Mohammed Mohammed
+            Copyright 2026, Mohammed Mohammed
           </p>
         )}
       </div>
